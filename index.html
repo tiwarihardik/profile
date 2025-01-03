@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Tiwari</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #ffffff;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 10px;
+            padding: 15px 30px;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #00ffcc;
+            color: #0d0d0d;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #00ffcc;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 2px #00ffcc;
+            margin-bottom: 50px;
+        }
+        .container h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .container ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .container ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+        }
+        .container ul li a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+        .container ul li a:hover {
+            color: #ffffff;
+        }
+        #logo {
+            display: block;
+            scale: auto;
+            width: 200px;
+            margin: auto;
+            border: 1px solid #00ffcc;
+            border-radius: 100%;
+            box-shadow: 0px 0px 10px 2px #00ffcc;
+            image-rendering: optimizeSpeed;
+        }
+        header{
+            height: 100vh;
+            justify-content: center;
+            align-content: center;
+        }
+        .team-info {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .team-info h3 {
+            margin: 5px 0;
+        }
+        .about-container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #00ffcc;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 2px #00ffcc;
+            max-width: 1200px;
+            width: 80%;
+            margin-bottom: 50px;
+        }
+        .about-container p {
+            margin: 15px 0;
+        }
+        #greet{
+            display: flex;
+            flex-flow: column;
+        }
+        #greet *{
+            margin: 1px;
+        }
+        #greet p{
+            margin-top: 25px ;
+        }
+        #swipe{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- GLOBE IQ Logo -->
+    <img id="logo" src="./hardik.png" alt="Image of Hardik Tiwari">
+    <div id="greet">
+    <p>This is</p>
+    <h1>Hardik Tiwari</h1>
+    </div>
+    <p id="swipe">Swipe up</p>
+</header>
+    <nav>
+        <a href="https://linkedin.com/in/itiwarihardik">LinkedIn</a>
+        <a href="#about">About</a>
+        <a href="#visit">Content</a>
+    </nav>
+
+    <div id="about" class="container">
+        <h2>About me</h2>
+       Hoi
+    </div>
+    <div id="visit" class="container">
+        <h2>Content</h2>
+        about content
+        <nav>
+            <a href="./Site/">Link to content</a>
+        </nav>
+    </div>
+</body>
+</html>
