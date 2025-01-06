@@ -1,152 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="animations.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hardik Tiwari</title>
     <style>
-        body {
-            background-color: #0d0d0d;
-            color: #00ffcc;
-            font-family: 'Orbitron', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        h1, h2, h3 {
-            text-align: center;
-            color: #ffffff;
-        }
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-        nav a {
-            color: #00ffcc;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin: 10px;
-            padding: 15px 30px;
-            border: 2px solid #00ffcc;
-            border-radius: 10px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        nav a:hover {
-            background-color: #00ffcc;
-            color: #0d0d0d;
-        }
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid #00ffcc;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px 2px #00ffcc;
-            margin-bottom: 50px;
-        }
-        .container h2 {
-            color: #ffffff;
-            margin-bottom: 20px;
-        }
-        .container ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .container ul li {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #1a1a1a;
-            border-radius: 10px;
-        }
-        .container ul li a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-        .container ul li a:hover {
-            color: #ffffff;
-        }
-        #logo {
-            display: block;
-            scale: auto;
-            width: 200px;
-            margin: auto;
-            border: 1px solid #00ffcc;
-            border-radius: 100%;
-            box-shadow: 0px 0px 10px 2px #00ffcc;
-            image-rendering: optimizeSpeed;
-        }
-        header{
-            height: 100vh;
-            justify-content: center;
-            align-content: center;
-        }
-        .team-info {
-            text-align: center;
-            margin: 10px 0;
-        }
-        .team-info h3 {
-            margin: 5px 0;
-        }
-        .about-container {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid #00ffcc;
-            border-radius: 20px;
-            padding: 20px;
-            box-shadow: 0px 0px 10px 2px #00ffcc;
-            max-width: 1200px;
-            width: 80%;
-            margin-bottom: 50px;
-        }
-        .about-container p {
-            margin: 15px 0;
-        }
-        #greet{
-            display: flex;
-            flex-flow: column;
-        }
-        #greet *{
-            margin: 1px;
-        }
-        #greet p{
-            margin-top: 25px ;
-        }
-        #swipe{
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <header>
-    <!-- GLOBE IQ Logo -->
-    <img id="logo" src="./hardik.png" alt="Image of Hardik Tiwari">
-    <div id="greet">
-    <p>This is</p>
-    <h1>Hardik Tiwari</h1>
-    </div>
-    <p id="swipe">Swipe up</p>
-</header>
-    <nav>
-        <a href="https://linkedin.com/in/itiwarihardik">LinkedIn</a>
-        <a href="#about">About</a>
-        <a href="#visit">Content</a>
-    </nav>
+      body {
+        background-color: #0d0d0d;
+        color: #e600ff;
+        font-family: "Orbitron", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        color: #ffffff;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem 0;
+      }
+      nav a {
+        color: #e600ff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 10px;
+        padding: 15px 30px;
+        border: 2px solid #e600ff;
+        border-radius: 10px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      nav a:hover {
+        background-color: #e600ff;
+        color: #0d0d0d;
+      }
+      .container {
+        width: 80%;
+        max-width: 1200px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #e600ff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 2px #e600ff;
+        margin-bottom: 50px;
+      }
+      .container h2 {
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .container ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .container ul li {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #1a1a1a;
+        border-radius: 10px;
+      }
+      .container ul li a {
+        color: #e600ff;
+        text-decoration: none;
+      }
+      .container ul li a:hover {
+        color: #ffffff;
+      }
+      #logo {
+        display: block;
+        width: 200px;
+        margin: auto;
+        border: 1px solid #e600ff;
+        border-radius: 100%;
+        box-shadow: 0px 0px 10px 2px #e600ff;
+      }
 
+      #logo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        image-rendering: optimizeSpeed;
+        border-radius: 100%;
+        transform: scale(1);
+      }
+
+      header {
+        height: 100vh;
+        justify-content: center;
+        align-content: center;
+      }
+      .team-info {
+        text-align: center;
+        margin: 10px 0;
+      }
+      .team-info h3 {
+        margin: 5px 0;
+      }
+      .about-container {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #e600ff;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 2px #e600ff;
+        max-width: 1200px;
+        width: 80%;
+        margin-bottom: 50px;
+      }
+      .about-container p {
+        margin: 15px 0;
+      }
+      #greet {
+        display: flex;
+        flex-flow: column;
+      }
+      #greet * {
+        margin: 1px;
+      }
+      #greet p {
+        margin-top: 25px;
+      }
+      #swipe {
+        margin-top: 10vh;
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+        justify-content: center;
+      }
+      #about p{
+        font-family: "Orbitron", monospace;
+      }
+      .filter-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 2px solid #e600ff;
+  border-radius: 10px;
+  color: #e600ff;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #e600ff;
+  color: #0d0d0d;
+}
+#filter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#filter-buttons button {
+  background-color: #1a1a1a;
+  color: #e600ff;
+  border: 1px solid #e600ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#filter-buttons button:hover {
+  background-color: #e600ff;
+  color: #0d0d0d;
+}
+
+#filter-buttons button.active {
+  background-color: #e600ff;
+  color: #0d0d0d;
+}
+
+#education-items .item {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#education-items .item h3 {
+  color: #ffffff;
+}
+
+#education-items .item ul {
+  list-style-type:disc;
+  padding-left: 10px;
+}
+
+#education-items .item ul li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+
+}
+
+#education-items .item ul li:hover {
+  background-color: #333333;
+}
+
+#professional-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#professional-filters button {
+  background-color: #1a1a1a;
+  color: #e600ff;
+  border: 1px solid #e600ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#professional-filters button:hover {
+  background-color: #e600ff;
+  color: #0d0d0d;
+}
+
+#professional-filters button.active {
+  background-color: #e600ff;
+  color: #0d0d0d;
+}
+
+#professional-roles .role {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#professional-roles .role h3 {
+  color: #ffffff;
+}
+
+#professional-roles .role ul {
+  list-style-type: disc;
+  padding-left: 10px;
+}
+
+#professional-roles .role ul li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+}
+
+#professional-roles .role ul li:hover {
+  background-color: #333333;
+}
+#general-details {
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#general-details h2 {
+  font-size: 2rem;
+  color: #e600ff;
+  margin-bottom: 30px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.detail-item {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.detail-item:hover {
+  background-color: #333333;
+  transform: translateY(-5px);
+}
+
+.detail-item i {
+  font-size: 1.5rem;
+  color: #e600ff;
+}
+
+.detail-item span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.detail-item p {
+  margin: 0;
+}
+
+.detail-item p a {
+  color: #e600ff;
+  text-decoration: none;
+}
+
+.detail-item p a:hover {
+  text-decoration: underline;
+}
+#social-media {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #e600ff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0px 0px 10px 2px #e600ff;
+    max-width: 1200px;
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #social-media h2 {
+    color: #e600ff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    color: #e600ff;
+    font-size: 1.8rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .social-icon:hover {
+    background-color: #e600ff;
+    color: #0d0d0d;
+  }
+  .social-icon i {
+    transition: transform 0.3s;
+  }
+  .social-icon:hover i {
+    transform: scale(1.1);
+  }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo" class="animate__animated animate__fadein animate__slow">
+        <img id="pic" src="./hardik.png" alt="Image of Hardik Tiwari" />
+      </div>
+
+      <div id="greet">
+        <p>This is</p>
+        <h1>Hardik Tiwari</h1>
+      </div>
+      <p
+        id="swipe"
+        class="animate__animated animate__bounce animate__infinite infinite animate__slow"
+      >
+        <box-icon name="chevrons-up" type="solid" color="#e600ff"></box-icon>
+        <strong>Swipe up </strong>
+        <box-icon name="chevrons-up" type="solid" color="#e600ff"></box-icon>
+      </p>
+    </header>
+    <nav>
+      <a href="https://linkedin.com/in/itiwarihardik">LinkedIn</a>
+      <a href="#about">About</a>
+      <a href="#visit">Content</a>
+    </nav>
+    <section class="container" id="general-details">
+      <h2>General Details</h2>
+      <div class="details-grid">
+        <div class="detail-item">
+          <i class="fas fa-birthday-cake"></i>
+          <span>Birthday:</span>
+          <p>October 29, 2008</p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>Phone:</span>
+          <p><a href="tel:+919041310197">+91 9041310197</a></p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-city"></i>
+          <span>City:</span>
+          <p>Mohali, India</p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-user-clock"></i>
+          <span>Age:</span>
+          <p>16</p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-school"></i>
+          <span>School:</span>
+          <p>SGHPSS School, Chandigarh</p>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-envelope"></i>
+          <span>Email:</span>
+          <p>
+            <a href="mailto:i@hardiktiwari.com">i@hardiktiwari.com</a><br>
+            <a href="mailto:itiwarihardik@gmail.com">itiwarihardik@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="social-media" class="container">
+      <h2>Follow Me</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/itiwarihardik" target="_blank" class="social-icon linkedin">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/itiwarihardik" target="_blank" class="social-icon twitter">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://github.com/itiwarihardik" target="_blank" class="social-icon github">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.instagram.com/itiwarihardik" target="_blank" class="social-icon instagram">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="mailto:i@hardiktiwari.com" class="social-icon email">
+          <i class="bx bx-envelope"></i>
+        </a>
+      </div>
+    </section>
+    
     <div id="about" class="container">
-        <h2>About me</h2>
-       Hoi
+      <h2>About me</h2>
+      <p>
+      As a passionate innovator and dedicated problem-solver, I immerse myself
+      in a range of cutting-edge technologies and creative pursuits. With a
+      foundation in full-stack development and cybersecurity, I specialize in
+      AI, ML, and deep learning solutions, including web-based applications,
+      data-driven projects, and inventive algorithms. As the founder of multiple
+      startups, I balance technological expertise with entrepreneurial spirit,
+      turning ambitious ideas into practical, impactful solutions. My journey is
+      shaped by a love for coding, art, and creative writing, highlighted
+      through projects such as 'Anon Blog,' AI-powered tools, and my published
+      book, 'To the One Who Looks at Me from the Sky' and 'The D-Day DSA.'
+      Driven by a relentless pursuit to better myself and my community, I focus
+      on blending analytical rigor with an artistic touch. My aspiration is to
+      transform technology into a force for good and bring meaningful change
+      across diverse domains.
+    </p>
     </div>
+    <section class="container" id="skills">
+      <h2>Skills</h2>
+      <nav id="skills-nav">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="programming">Programming</button>
+        <button class="filter-btn" data-category="frameworks">Frameworks & Tools</button>
+        <button class="filter-btn" data-category="development">Development</button>
+        <button class="filter-btn" data-category="creative">Creative</button>
+      </nav>
+      <ul id="skills-list">
+        <li data-category="programming">💻 <strong>Programming Languages:</strong> Python, Java, C++, JavaScript, HTML, CSS</li>
+        <li data-category="frameworks">🔧 <strong>Frameworks & Tools:</strong> React, Node.js, Django, Arduino, TensorFlow</li>
+        <li data-category="development">🛠 <strong>Development:</strong> Full Stack Development, Cybersecurity, AI & ML Projects</li>
+        <li data-category="programming frameworks">⚡ <strong>Other Skills:</strong> Data Analysis, Digital Forensics, Relational Database Systems</li>
+        <li data-category="creative">🎨 <strong>Creative Skills:</strong> Writing, Painting, Poetic Composition</li>
+      </ul>
+    </section>
+    <section class="container" id="summary-education">
+      <h2>Summary and Education</h2>
+      <div id="filter-buttons">
+        <button onclick="filterItems('all')" class="active">All</button>
+        <button onclick="filterItems('academics')">Academics</button>
+        <button onclick="filterItems('extracurricular')">Extracurricular</button>
+      </div>
+      <div id="education-items">
+        <!-- Academic Section -->
+        <div class="item academics">
+          <h3>Current</h3>
+          <p><strong>Sri Guru Harikrishan Public Sen. Sec. School, Chandigarh (CBSE)</strong></p>
+          <ul>
+            <li>Enrolled in Data Science and Machine Learning Course (IIT-Madras Partner Program).</li>
+            <li>Active NSS Volunteer.</li>
+          </ul>
+        </div>
+    
+        <div class="item academics">
+          <h3>Matriculation (2023-24)</h3>
+          <p><strong>Ambrosial Public School, Zira (ICSE)</strong></p>
+          <ul>
+            <li>Merit Holder with approximately 90% in Board Examinations.</li>
+            <li>Certificate of Merit for academic excellence.</li>
+          </ul>
+        </div>
+    
+        <!-- Extracurricular Section -->
+        <div class="item extracurricular">
+          <h3>National Service Scheme (NSS) (2024-Present)</h3>
+          <p>Active NSS Volunteer at Sri Guru Harikrishan Public Sen. Sec. School, Chandigarh.</p>
+        </div>
+    
+        <div class="item extracurricular">
+          <h3>National Cadet Corps (NCC) (2022-2024)</h3>
+          <ul>
+            <li>Served as Senior Cadet managing a group of 29 cadets.</li>
+            <li>Hosted leadership and awareness workshops on cyber laws, mental health, and social issues.</li>
+            <li>Trained cadets in weapon handling, drill discipline, and map reading.</li>
+            <li>Awarded Best Stage Anchor and Gold Medallion in Weapon Training.</li>
+            <li>Received ‘A’ Certificate with Alpha grade.</li>
+          </ul>
+        </div>
+    
+        <div class="item extracurricular">
+          <h3>Campaigns and Events</h3>
+          <ul>
+            <li>Organized awareness campaigns during school assemblies on various social topics.</li>
+            <li>Played a key role in hosting regional boxing tournaments in 2023.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="professional-section">
+      <h2>Professional Experience</h2>
+      <div id="professional-filters">
+        <button onclick="filterRoles('all')" class="active">All</button>
+        <button onclick="filterRoles('leadership')">Leadership</button>
+        <button onclick="filterRoles('internships')">Internships</button>
+        <button onclick="filterRoles('entrepreneurship')">Entrepreneurship</button>
+      </div>
+      <div id="professional-roles">
+        <!-- Leadership Roles -->
+        <div class="role  entrepreneurship leadership">
+          <h3>CEO</h3>
+          <p><strong>Mega Mind Co.</strong> | November 2024 - Present</p>
+          <ul>
+            <li>Working on a new startup focused on solving societal challenges across various domains like education, health, and social welfare.</li>
+            <li>Leading multiple projects such as SMDX and Pen&Kalam.</li>
+            <li>Contributing to the open-source community with projects like Web-Scrapper and Buddy AI, and planning future initiatives.</li>
+            <li>Active member of OE Global, organizing events to support open research, education, and development.</li>
+          </ul>
+        </div>
+    
+        <div class="role leadership">
+          <h3>Business Manager</h3>
+          <p><strong>The Healthy Harvest Co.</strong> | Current</p>
+          <ul>
+            <li>Managing business and e-commerce for a 7+ decades-old health foods brand.</li>
+            <li>Leading the brand’s transition from offline to online operations.</li>
+          </ul>
+        </div>
+    
+        <!-- Internships -->
+        <div class="role internships">
+          <h3>Web Development Intern</h3>
+          <p><strong>Nexware Solutions</strong> | November 01, 2024 - December 01, 2024</p>
+          <ul>
+            <li>Completed all assigned tasks during the internship period, available on <a href="https://github.com" target="_blank">GitHub</a>.</li>
+          </ul>
+        </div>
+    
+        <div class="role internships">
+          <h3>Finance Management Intern</h3>
+          <p><strong>Swastika Investmart</strong> | October 2024 - November 2024</p>
+          <ul>
+            <li>Authored 6 finance-related blogs.</li>
+            <li>Conducted market research and SWOT analysis on TCS and Apollo Hospitals Ltd.</li>
+          </ul>
+        </div>
+    
+        <!-- Entrepreneurship -->
+        <div class="role entrepreneurship">
+          <h3>Founder and CEO</h3>
+          <p><strong>Hi Technologies Co. (HiTek Foundation)</strong> | August 2021 - October 2024</p>
+          <ul>
+            <li>Assisted MSMEs with registration, benefits, and essential tools for growth.</li>
+            <li>Focused on empowering small businesses; ceased operations in October 2024.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
     <div id="visit" class="container">
-        <h2>Content</h2>
-        about content
-        <nav>
-            <a href="./Site/">Link to content</a>
-        </nav>
+      <h2>Content</h2>
+      about content
+      <nav>
+        <a href="./Site/">Link to content</a>
+      </nav>
     </div>
-</body>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".filter-btn");
+      const skills = document.querySelectorAll("#skills-list li");
+  
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          const category = button.getAttribute("data-category");
+  
+          // Filter skills based on the selected category
+          skills.forEach(skill => {
+            if (category === "all" || skill.getAttribute("data-category").includes(category)) {
+              skill.style.display = "block";
+            } else {
+              skill.style.display = "none";
+            }
+          });
+  
+          // Highlight the active button
+          buttons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+        });
+      });
+    });
+
+    function filterItems(category) {
+  const items = document.querySelectorAll('#education-items .item');
+  const buttons = document.querySelectorAll('#filter-buttons button');
+
+  // Reset button styles
+  buttons.forEach((btn) => btn.classList.remove('active'));
+
+  // Highlight the active button
+  document
+    .querySelector(`#filter-buttons button[onclick="filterItems('${category}')"]`)
+    .classList.add('active');
+
+  // Show/Hide items based on category
+  items.forEach((item) => {
+    if (category === 'all' || item.classList.contains(category)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+// Initialize with all items visible
+filterItems('all');
+
+function filterRoles(category) {
+  const roles = document.querySelectorAll('#professional-roles .role');
+  const buttons = document.querySelectorAll('#professional-filters button');
+
+  // Reset button styles
+  buttons.forEach((btn) => btn.classList.remove('active'));
+
+  // Highlight the active button
+  document
+    .querySelector(`#professional-filters button[onclick="filterRoles('${category}')"]`)
+    .classList.add('active');
+
+  // Show/Hide roles based on category
+  roles.forEach((role) => {
+    if (category === 'all' || role.classList.contains(category)) {
+      role.style.display = 'block';
+    } else {
+      role.style.display = 'none';
+    }
+  });
+}
+
+// Initialize with all roles visible
+filterRoles('all');
+
+document.querySelectorAll('.detail-item p a').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const input = document.createElement('input');
+    input.value = link.innerText;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    alert(`${link.innerText} copied to clipboard!`);
+  });
+});
+
+  </script>
+  
 </html>
